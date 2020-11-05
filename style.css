@@ -1,0 +1,206 @@
+body {
+    background-color: gray;
+}
+
+html {
+    font-size: 13px;
+}
+
+a:hover, u {
+    text-decoration: none!important;
+}
+
+.feacademy {
+    position: relative;
+}
+
+.feacademy .arrow {
+    z-index: 1000;
+    z-index: -1;
+    opacity: .5;
+    position: absolute;
+}
+
+.feacademy .dotted-circle {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    opacity: .3;
+    z-index: -1;
+    -webkit-animation: rotation 38s linear infinite;
+    animation: rotation 38s linear infinite;
+}
+
+.fe-academy .nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+}
+
+.fe-academy .nav-pills-custom .nav-link.active {
+    color: #45b649;
+    background: #fff;
+}
+
+.fe-academy .tab-left .nav-link:hover {
+    background-color: #22b773 !important;
+    color: #FFF !important;
+}
+
+.fe-academy .card.rounded {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fe-academy .card.rounded img {
+    width: 100px;
+}
+
+/* Rounded tabs */
+
+@media (min-width: 576px) {
+    .fe-academy .rounded-nav {
+        border-radius: 50rem !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .fe-academy .rounded-nav .nav-link {
+        border-radius: 50rem !important;
+    }
+}
+
+/* Add indicator arrow for the active tab */
+/* @media (min-width: 992px) { */
+/* .fe-academy .nav-pills-custom .nav-link::before { */
+/* content: ''; */
+/* display: block; */
+/* border-top: 8px solid transparent; */
+/* border-left: 10px solid #22b773; */
+/* border-bottom: 8px solid transparent; */
+/* position: absolute; */
+/* top: 50%; */
+/* right: -10px; */
+/* transform: translateY(-50%); */
+/* opacity: 0; */
+/* } */
+/* } */
+
+.fe-academy .nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+.fe-academy .with-arrow .nav-link.active {
+    position: relative;
+}
+
+/* .fe-academy .with-arrow .nav-link.active::after { */
+/* content: ''; */
+/* border-left: 6px solid transparent; */
+/* border-right: 6px solid transparent; */
+/* border-top: 6px solid #22b773; */
+/* position: absolute; */
+/* bottom: -6px; */
+/* left: 50%; */
+/* transform: translateX(-50%); */
+/* display: block; */
+/* } */
+
+/* Horizontal line */
+.fe-academy .collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+/* Vertical line */
+.fe-academy .collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.fe-academy .collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+}
+
+.fe-academy .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+}
+
+.fe-academy .card-body h5 {
+    font-weight: normal !important;
+    font-size: 1.25rem !important;
+    margin: 0;
+}
+
+.fe-academy .tab-content .rounded {
+    border: 1px solid #dfdfdf;
+}
+
+.fe-academy div#management_foundation,
+.fe-academy div#leadership_competency {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.fe-academy .course-item {
+    align-items: center;
+    flex-direction: row!important;
+}
+.fe-academy .course_icon {
+    width: 55px;
+    min-height: 55px;
+    flex: 0 0 14%;
+    background-color: #22b773;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.fe-academy .fa-book-open {
+    font-size: larger;
+}
+
+.fe-academy .hvr-icon-grow-rotate {
+    display: flex;
+}
+.fe-academy .hvr-underline-from-left:before {
+    background: #22b773;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    border-radius: 10px;
+    background-color: rgba(186,193,196,.17);
+    border: 1px solid rgba(186,193,196,.17);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #ccc;
+    background-color: #b5bec1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
